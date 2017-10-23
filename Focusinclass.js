@@ -45,3 +45,4 @@ if (classCheck()) {
     airplane = true;
     bright = 10;
 }
+vibrate(10);
