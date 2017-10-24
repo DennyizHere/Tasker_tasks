@@ -19,8 +19,8 @@ function timeCheck() {
 }
 
 function classCheck() {
-    var dayCheck = d;
-    var timeCheck = t;
+    var d = dayCheck();
+    var t = timeCheck();
     if (d == "1" && t == "12:30")
         return true;
     else if (d == "2" && t == "10:00")
@@ -45,5 +45,6 @@ if (classCheck()) {
     airplane = true;
     bright = 10;
 }
+
 flash("check");
 vibrate(1000);
