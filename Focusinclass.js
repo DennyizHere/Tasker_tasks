@@ -45,6 +45,3 @@ if (classCheck()) {
     airplane = true;
     bright = 10;
 }
-
-flash("check");
-vibrate(1000);
