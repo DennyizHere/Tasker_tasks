@@ -21,11 +21,11 @@ function timeCheck() {
 function classCheck() {
     var d = dayCheck();
     var t = timeCheck();
-    if (d == "1" && t == "12:30")
+    if (d == "1" && t >= "12:30" && t < "15:15")
         return true;
-    else if (d == "2" && t == "10:00")
+    else if (d == "2" && t >= "10:00" && t < "10:45)")
         return true;
-    else if ((d == "2" || d == "3") && t == "17:30")
+    else if ((d == "2" || d == "3") && t >= "17:30" && t < "20:45")
         return true;
 }
 
