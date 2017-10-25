@@ -37,11 +37,18 @@ function focusMode() {
     mediaVol(0, false, false);
 }
 
+function normalMode() {
+    silentMode('off');
+    setBT(true);
+}
+
 var bright;
-var airplane;
 
 if (classCheck()) {
     focusMode();
-    airplane = true;
     bright = 10;
+}
+else {
+    normalMode();
+    bright = 200;
 }
